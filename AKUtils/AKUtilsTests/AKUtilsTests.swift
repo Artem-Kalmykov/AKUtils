@@ -9,7 +9,7 @@
 import XCTest
 @testable import AKUtils
 
-class FFUtilsTests: XCTestCase {
+class AKUtilsTests: XCTestCase {
     func testExample() {
         
     }

@@ -442,13 +442,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = B2YEP8DDS6;
-				INFOPLIST_FILE = FFUtilsTests/Info.plist;
+				INFOPLIST_FILE = AKUtilsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = FF.FFUtilsTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.artemkalmykov.ios.utils-tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -458,13 +458,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = B2YEP8DDS6;
-				INFOPLIST_FILE = FFUtilsTests/Info.plist;
+				INFOPLIST_FILE = AKUtilsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = FF.FFUtilsTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.artemkalmykov.ios.utils-tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
