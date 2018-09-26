@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class AKTextField: UITextField {
+open class AKTextField: UITextField {
     @IBOutlet open weak var nextField: UIResponder?
     
     @IBInspectable var handleReturn: Bool = false
@@ -37,7 +37,7 @@ public class AKTextField: UITextField {
         }
     }
     
-    override public func rightViewRect(forBounds bounds: CGRect) -> CGRect {
+    override open func rightViewRect(forBounds bounds: CGRect) -> CGRect {
         return super.rightViewRect(forBounds: bounds).inset(by: rightViewInset)
     }
 }
