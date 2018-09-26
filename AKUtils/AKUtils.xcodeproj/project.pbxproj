@@ -10,6 +10,7 @@
 		5809E1B81EF81FA6006948A4 /* UITableView+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5809E1B71EF81FA6006948A4 /* UITableView+Custom.swift */; };
 		5809E1BA1EF820ED006948A4 /* UICollectionView+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5809E1B91EF820ED006948A4 /* UICollectionView+Custom.swift */; };
 		5829741E1F0ABF1A00CBCD9F /* AKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5829741D1F0ABF1A00CBCD9F /* AKTextField.swift */; };
+		58516CA0215BC7F100FF4AFA /* UIAlertController+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58516C9F215BC7F100FF4AFA /* UIAlertController+Custom.swift */; };
 		585E0FE51F48673F00E83F03 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585E0FE41F48673F00E83F03 /* Utils.swift */; };
 		58B418A71E58366900799010 /* UIImage+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B418A61E58366900799010 /* UIImage+Custom.swift */; };
 		58E3F0801EF44B9300E843B8 /* NSObject+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E3F07F1EF44B9300E843B8 /* NSObject+Custom.swift */; };
@@ -39,6 +40,7 @@
 		5809E1B91EF820ED006948A4 /* UICollectionView+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Custom.swift"; sourceTree = "<group>"; };
 		5829741D1F0ABF1A00CBCD9F /* AKTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKTextField.swift; sourceTree = "<group>"; };
 		5840B7982158185F00A09AFB /* AKUtils.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = AKUtils.podspec; path = ../AKUtils.podspec; sourceTree = "<group>"; };
+		58516C9F215BC7F100FF4AFA /* UIAlertController+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Custom.swift"; sourceTree = "<group>"; };
 		585E0FE41F48673F00E83F03 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		58B418A61E58366900799010 /* UIImage+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Custom.swift"; sourceTree = "<group>"; };
 		58E3F07F1EF44B9300E843B8 /* NSObject+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Custom.swift"; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				58E3F0861EF453A600E843B8 /* UIStoryboard+Custom.swift */,
 				5809E1B71EF81FA6006948A4 /* UITableView+Custom.swift */,
 				5809E1B91EF820ED006948A4 /* UICollectionView+Custom.swift */,
+				58516C9F215BC7F100FF4AFA /* UIAlertController+Custom.swift */,
 				5829741D1F0ABF1A00CBCD9F /* AKTextField.swift */,
 				585E0FE41F48673F00E83F03 /* Utils.swift */,
 			);
@@ -241,6 +244,7 @@
 				919057621DA66DA100AB8C0D /* UICollectionViewCell+Custom.swift in Sources */,
 				58E3F0851EF4534D00E843B8 /* UIViewController+Custom.swift in Sources */,
 				5829741E1F0ABF1A00CBCD9F /* AKTextField.swift in Sources */,
+				58516CA0215BC7F100FF4AFA /* UIAlertController+Custom.swift in Sources */,
 				58B418A71E58366900799010 /* UIImage+Custom.swift in Sources */,
 				91AA08C61DA3E22400A22BA0 /* UITableViewCell+Custom.swift in Sources */,
 				58E3F0801EF44B9300E843B8 /* NSObject+Custom.swift in Sources */,
