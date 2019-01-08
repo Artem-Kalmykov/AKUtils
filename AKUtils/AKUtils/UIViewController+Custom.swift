@@ -12,4 +12,8 @@ extension UIViewController {
     open class var storyboardID: String {
         return self.className
     }
+    
+    public func embedInNavigation() -> UINavigationController {
+        return UINavigationController(rootViewController: self)
+    }
 }
