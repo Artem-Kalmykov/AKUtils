@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIAlertController{
+extension UIAlertController {
     public static func showOKAlert(title: String?, message: String?) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let OKAction = UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .default, handler: nil)
@@ -30,8 +30,11 @@ extension UIAlertController{
     }
     
     public func show() {
+        let dummyController = DummyViewController()
+        dummyController.statusBarStyle = UIApplication.shared.windows.last?.rootViewController?.preferredStatusBarStyle ?? .default
+        
         self.alertWindow = UIWindow(frame: UIScreen.main.bounds)
-        self.alertWindow?.rootViewController = UIViewController()
+        self.alertWindow?.rootViewController = dummyController
         
         let topWindow = UIApplication.shared.windows.last
         self.alertWindow?.windowLevel = topWindow!.windowLevel + 1
@@ -45,5 +48,13 @@ extension UIAlertController{
         
         self.alertWindow?.isHidden = true
         self.alertWindow = nil
+    }
+}
+
+private class DummyViewController: UIViewController {
+    var statusBarStyle: UIStatusBarStyle = .default
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return statusBarStyle
     }
 }
