@@ -31,7 +31,7 @@ extension UIAlertController {
     
     public func show() {
         let dummyController = DummyViewController()
-        dummyController.statusBarStyle = UIApplication.shared.windows.last?.rootViewController?.preferredStatusBarStyle ?? .default
+        dummyController.statusBarStyle = UIApplication.shared.keyWindow?.rootViewController?.preferredStatusBarStyle ?? .default
         
         self.alertWindow = UIWindow(frame: UIScreen.main.bounds)
         self.alertWindow?.rootViewController = dummyController
