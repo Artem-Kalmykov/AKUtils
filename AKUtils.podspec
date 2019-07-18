@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AKUtils'
-  s.version          = '1.0.6'
+  s.version          = '1.0.7'
   s.summary          = 'Utils for different things'
 
   s.homepage         = 'https://github.com/Artem-Kalmykov/AKUtils'
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/Artem-Kalmykov/AKUtils.git', :tag => s.version }
 
   s.ios.deployment_target = '8.0'
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
 
   s.source_files = 'AKUtils/AKUtils/**/*.{m,h,mm,hpp,cpp,c,swift}'
 

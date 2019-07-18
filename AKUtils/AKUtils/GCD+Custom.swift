@@ -19,7 +19,7 @@ func dispatchAfter(seconds: Double, closure: @escaping () -> ()) {
 public extension DispatchQueue {
     fileprivate static var onceTracker = [String]()
 
-    public class func once(token: String, block:() -> ()) {
+    class func once(token: String, block:() -> ()) {
         objc_sync_enter(self)
         defer {
             objc_sync_exit(self)

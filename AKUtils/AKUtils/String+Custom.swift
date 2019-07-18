@@ -47,5 +47,10 @@ extension String {
 
 /// Localization
 public func LocalizedString(_ string: String) -> String {
-    return NSLocalizedString(string, comment: "")
+    let localized = NSLocalizedString(string, comment: "")
+    if localized == string.uppercased() {
+        return string
+    } else {
+        return localized
+    }
 }
