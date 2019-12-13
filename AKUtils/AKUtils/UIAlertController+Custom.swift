@@ -54,8 +54,8 @@ extension UIAlertController {
     }
     
     public static func dismissActiveAlert() {
-        if alertWindow?.rootViewController?.className == "DummyViewController" {
-            alertWindow?.rootViewController?.presentedViewController?.dismiss(animated: true)
+        if let dummyController = UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.rootViewController as? DummyViewController {
+            dummyController.presentedViewController?.dismiss(animated: true)
         }
     }
 }
