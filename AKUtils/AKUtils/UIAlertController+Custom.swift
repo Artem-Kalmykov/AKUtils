@@ -53,7 +53,7 @@ extension UIAlertController {
         self.alertWindow = nil
     }
     
-    public func dismissActiveAlert() {
+    public static func dismissActiveAlert() {
         if alertWindow?.rootViewController?.className == "DummyViewController" {
             alertWindow?.rootViewController?.presentedViewController?.dismiss(animated: true)
         }
