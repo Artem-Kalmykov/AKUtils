@@ -8,19 +8,19 @@
 
 import Foundation
 
-struct CustomCodingKeys: CodingKey {
-    var stringValue: String
-    init(stringValue: String) {
+public struct CustomCodingKeys: CodingKey {
+    public var stringValue: String
+    public init(stringValue: String) {
         self.stringValue = stringValue
     }
     
-    var intValue: Int?
-    init?(intValue: Int) {
+    public var intValue: Int?
+    public init?(intValue: Int) {
         return nil
     }
 }
 
-extension Encodable {
+public extension Encodable {
     var dictionary: [String: Any]? {
         guard let data = try? JSONEncoder().encode(self) else { return nil }
         return (try? JSONSerialization.jsonObject(with: data, options: .allowFragments)).flatMap { $0 as? [String: Any] }
