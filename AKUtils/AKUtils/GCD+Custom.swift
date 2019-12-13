@@ -9,7 +9,7 @@
 import Foundation
 
 /// Dispatch after
-func dispatchAfter(seconds: Double, closure: @escaping () -> ()) {
+public func dispatchAfter(seconds: Double, closure: @escaping () -> ()) {
     DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
         closure()
     }

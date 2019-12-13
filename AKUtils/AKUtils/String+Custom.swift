@@ -25,6 +25,14 @@ extension String {
         }
     }
     
+    public var isEmpty: Bool {
+        return trimmingCharacters(in: .whitespacesAndNewlines).count == 0
+    }
+    
+    public func empty() -> Bool {
+        return isEmpty
+    }
+    
     public var isValidEmail: Bool {
         let emailRegEx = "[a-zA-Z0-9\\'\\+\\-\\_\\%\\.]{2,256}" +
             "\\@" + "[a-zA-Z0-9][a-zA-Z0-9\\-]{0,64}" + "(" +

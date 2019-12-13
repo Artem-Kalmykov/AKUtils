@@ -47,7 +47,16 @@ extension UIAlertController {
         super.viewDidDisappear(animated)
         
         self.alertWindow?.isHidden = true
+        if #available(iOS 13.0, *) {
+            self.alertWindow?.windowScene = nil
+        }
         self.alertWindow = nil
+    }
+    
+    public func dismissActiveAlert() {
+        if alertWindow?.rootViewController?.className == "DummyViewController" {
+            alertWindow?.rootViewController?.presentedViewController?.dismiss(animated: true)
+        }
     }
 }
 
