@@ -4,6 +4,11 @@ import PackageDescription
 
 let package = Package(
     name: "AKUtils",
+    platforms: [
+        .iOS(.v8),
+        .tvOS(.v9),
+        .watchOS(.v3)
+    ],
     products: [
         .library(
             name: "AKUtils",
@@ -12,6 +17,7 @@ let package = Package(
     targets: [
         .target(
             name: "AKUtils",
-            dependencies: [])
-    ]
+            path: "Sources")
+    ],
+    swiftLanguageVersions: [.v5]
 )
