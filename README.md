@@ -1,6 +1,22 @@
 # AKUtils
 Different iOS utilities to make life easier.
 
+# Installation
+## Cocoapods
+```ruby
+pod 'AKUtils'
+```
+## Carthage
+```
+github "Artem-Kalmykov/AKUtils"
+```
+## Swift Package Manager
+```swift
+dependencies: [
+    .package(url: "https://github.com/Artem-Kalmykov/AKUtils.git")
+]
+```
+
 ## Controls
 
 ### AKTextField
@@ -93,12 +109,3 @@ Call `func embedInNavigation() -> UINavigationController` to create a `UINavigat
 `public typealias EmptyClosure = (() -> Void)`
 ### Optional comparison
 A number of global infix operators and functions are defined to be able to compare optionals.
-
-
-
-
-
-
-
-
-
