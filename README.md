@@ -151,4 +151,8 @@ Call `func embedInNavigation() -> UINavigationController` to create a `UINavigat
 ### Empty Closure
 `public typealias EmptyClosure = (() -> Void)`
 ### Optional comparison
-A number of global infix operators and functions are defined to be able to compare optionals.
+A number of global infix operators and functions are defined to be able to compare optionals with the following operators:
+- `<?`;
+- `<=?`;
+- `>?`;
+- `>=?`.

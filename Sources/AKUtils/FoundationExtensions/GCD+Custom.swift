@@ -9,7 +9,7 @@
 import Foundation
 
 /// Dispatch after
-public func dispatchAfter(seconds: Double, closure: @escaping () -> ()) {
+public func dispatchAfter(seconds: Double, closure: @escaping EmptyClosure) {
     DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
         closure()
     }
@@ -19,7 +19,7 @@ public func dispatchAfter(seconds: Double, closure: @escaping () -> ()) {
 public extension DispatchQueue {
     fileprivate static var onceTracker = [String]()
 
-    class func once(token: String, block:() -> ()) {
+    class func once(token: String, closure: EmptyClosure) {
         objc_sync_enter(self)
         defer {
             objc_sync_exit(self)
@@ -30,6 +30,6 @@ public extension DispatchQueue {
         }
         
         self.onceTracker.append(token)
-        block()
+        closure()
     }
 }

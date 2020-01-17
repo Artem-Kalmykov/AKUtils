@@ -16,7 +16,8 @@ public struct CustomCodingKeys: CodingKey {
     
     public var intValue: Int?
     public init?(intValue: Int) {
-        return nil
+        self.intValue = intValue
+        self.stringValue = "\(intValue)"
     }
 }
 

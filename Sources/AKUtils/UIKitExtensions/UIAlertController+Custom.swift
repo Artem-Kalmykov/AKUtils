@@ -1,6 +1,6 @@
 //
 //  UIAlertController+Custom.swift
-//  FFControls
+//  AKUtils
 //
 //  Created by Artem Kalmykov on 10/12/16.
 //  Copyright © 2016 Faifly. All rights reserved.
@@ -9,28 +9,29 @@
 import UIKit
 
 extension UIAlertController {
-    public static func showOKAlert(title: String?, message: String?) {
+    @discardableResult public static func showOKAlert(title: String?, message: String?) -> UIAlertController {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let OKAction = UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .default, handler: nil)
-        alertController.addAction(OKAction)
+        let okAction = UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .default, handler: nil)
+        alertController.addAction(okAction)
         alertController.show()
+        return alertController
     }
     
     private struct AssociatedKeys {
-        static var AlertWindow = "alertWindow"
+        static var alertWindow = "alertWindow"
     }
     
     private var alertWindow: UIWindow? {
         get {
-            return objc_getAssociatedObject(self, &AssociatedKeys.AlertWindow) as? UIWindow? ?? nil
+            return objc_getAssociatedObject(self, &AssociatedKeys.alertWindow) as? UIWindow
         }
         set {
-            objc_setAssociatedObject(self, &AssociatedKeys.AlertWindow, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            objc_setAssociatedObject(self, &AssociatedKeys.alertWindow, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
     
     public func show() {
-        let dummyController = DummyViewController()
+        let dummyController = DummyAlertViewController()
         dummyController.statusBarStyle = UIApplication.shared.keyWindow?.rootViewController?.preferredStatusBarStyle ?? .default
         
         self.alertWindow = UIWindow(frame: UIScreen.main.bounds)
@@ -54,13 +55,13 @@ extension UIAlertController {
     }
     
     public static func dismissActiveAlert() {
-        if let dummyController = UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.rootViewController as? DummyViewController {
+        if let dummyController = UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.rootViewController as? DummyAlertViewController {
             dummyController.presentedViewController?.dismiss(animated: true)
         }
     }
 }
 
-private class DummyViewController: UIViewController {
+private class DummyAlertViewController: UIViewController {
     var statusBarStyle: UIStatusBarStyle = .default
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

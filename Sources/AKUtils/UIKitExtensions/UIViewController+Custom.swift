@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIViewController {
-    open class var storyboardID: String {
+    @objc open class var storyboardID: String {
         return self.className
     }
     

@@ -11,7 +11,7 @@ import UIKit
 open class AKTextField: UITextField {
     @IBOutlet open weak var nextField: UIResponder?
     
-    @IBInspectable public var handleReturn: Bool = false
+    @IBInspectable public var handleReturn: Bool = true
     @IBInspectable public var isPasteEnabled: Bool = true
     @IBInspectable public var isSelectEnabled: Bool = true
     @IBInspectable public var isSelectAllEnabled: Bool = true
@@ -36,6 +36,8 @@ open class AKTextField: UITextField {
     }
     
     @objc private func onReturnButton() {
+        guard handleReturn else { return }
+        
         if self.returnKeyType == .next {
             self.nextField?.becomeFirstResponder()
         } else if self.returnKeyType == .done {

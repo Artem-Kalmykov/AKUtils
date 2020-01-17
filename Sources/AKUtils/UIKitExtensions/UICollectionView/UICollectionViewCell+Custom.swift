@@ -9,7 +9,7 @@
 import UIKit
 
 extension UICollectionViewCell {
-    open class var reuseID: String {
+    @objc open class var reuseID: String {
         return self.className
     }
 }
