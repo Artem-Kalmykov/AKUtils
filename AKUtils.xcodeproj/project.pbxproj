@@ -40,6 +40,7 @@
 		580A289E23D1E35F0077DE17 /* UIStoryboard+Custom_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580A289D23D1E35F0077DE17 /* UIStoryboard+Custom_Tests.swift */; };
 		580A28A023D1E4B60077DE17 /* UIImage+Custom_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580A289F23D1E4B60077DE17 /* UIImage+Custom_Tests.swift */; };
 		580A28A323D1F69C0077DE17 /* UtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580A28A223D1F69C0077DE17 /* UtilsTests.swift */; };
+		582EC948240BF47900ADF9B0 /* UIApplication+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EC947240BF47900ADF9B0 /* UIApplication+Custom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		580A289F23D1E4B60077DE17 /* UIImage+Custom_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Custom_Tests.swift"; sourceTree = "<group>"; };
 		580A28A223D1F69C0077DE17 /* UtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsTests.swift; sourceTree = "<group>"; };
 		580A28A423D1F8550077DE17 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		582EC947240BF47900ADF9B0 /* UIApplication+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Custom.swift"; sourceTree = "<group>"; };
 		911A96211D99B4D40082E87E /* AKUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AKUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -184,6 +186,7 @@
 				580A283523D1AD840077DE17 /* UIViewController+Custom.swift */,
 				580A283923D1AD840077DE17 /* UIStoryboard+Custom.swift */,
 				580A283A23D1AD840077DE17 /* UIImage+Custom.swift */,
+				582EC947240BF47900ADF9B0 /* UIApplication+Custom.swift */,
 			);
 			path = UIKitExtensions;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 				580A284023D1AD840077DE17 /* Utils.swift in Sources */,
 				580A284723D1AD840077DE17 /* UITableViewCell+Custom.swift in Sources */,
 				580A284523D1AD840077DE17 /* UICollectionViewCell+Custom.swift in Sources */,
+				582EC948240BF47900ADF9B0 /* UIApplication+Custom.swift in Sources */,
 				580A283E23D1AD840077DE17 /* GCD+Custom.swift in Sources */,
 				580A283C23D1AD840077DE17 /* Decodable+CustomCoding.swift in Sources */,
 				580A284423D1AD840077DE17 /* UICollectionView+Custom.swift in Sources */,
@@ -549,6 +553,7 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J99KK893V2;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -576,6 +581,7 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J99KK893V2;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -602,6 +608,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AKUtilsDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = J99KK893V2;
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = AKUtilsDemo/Info.plist;
@@ -628,6 +635,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AKUtilsDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = J99KK893V2;
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = AKUtilsDemo/Info.plist;
@@ -769,9 +777,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = J99KK893V2;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -782,11 +790,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.2;
+				MARKETING_VERSION = 2.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.artemkalmykov.ios.utils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -796,9 +804,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = J99KK893V2;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -809,11 +817,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.2;
+				MARKETING_VERSION = 2.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.artemkalmykov.ios.utils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
