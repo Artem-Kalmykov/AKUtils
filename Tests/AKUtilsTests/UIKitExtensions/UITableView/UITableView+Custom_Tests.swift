@@ -9,12 +9,18 @@
 import XCTest
 @testable import AKUtils
 
+class CustomCell: UITableViewCell {}
+
 final class UITableView_Custom_Tests: XCTestCase {
-    private class CustomCell: UITableViewCell {}
-    
     func testDequeuingReusableCell() {
         let tableView = UITableView()
         tableView.register(CustomCell.self, forCellReuseIdentifier: CustomCell.reuseID)
+        _ = tableView.dequeueReusableCell(ofType: CustomCell.self, for: IndexPath(row: 0, section: 0))
+    }
+    
+    func testRegisteringNibs() {
+        let tableView = UITableView()
+        tableView.registerNib(type: CustomCell.self)
         _ = tableView.dequeueReusableCell(ofType: CustomCell.self, for: IndexPath(row: 0, section: 0))
     }
 }

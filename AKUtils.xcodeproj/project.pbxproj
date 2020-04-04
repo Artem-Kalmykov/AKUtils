@@ -40,6 +40,7 @@
 		580A289E23D1E35F0077DE17 /* UIStoryboard+Custom_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580A289D23D1E35F0077DE17 /* UIStoryboard+Custom_Tests.swift */; };
 		580A28A023D1E4B60077DE17 /* UIImage+Custom_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580A289F23D1E4B60077DE17 /* UIImage+Custom_Tests.swift */; };
 		580A28A323D1F69C0077DE17 /* UtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580A28A223D1F69C0077DE17 /* UtilsTests.swift */; };
+		58184A592438C89900E848C6 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58184A582438C89900E848C6 /* CustomCell.xib */; };
 		582EC948240BF47900ADF9B0 /* UIApplication+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EC947240BF47900ADF9B0 /* UIApplication+Custom.swift */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +101,7 @@
 		580A289F23D1E4B60077DE17 /* UIImage+Custom_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Custom_Tests.swift"; sourceTree = "<group>"; };
 		580A28A223D1F69C0077DE17 /* UtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsTests.swift; sourceTree = "<group>"; };
 		580A28A423D1F8550077DE17 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		58184A582438C89900E848C6 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		582EC947240BF47900ADF9B0 /* UIApplication+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Custom.swift"; sourceTree = "<group>"; };
 		911A96211D99B4D40082E87E /* AKUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AKUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -302,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				580A289A23D1E32C0077DE17 /* Testable.storyboard */,
+				58184A582438C89900E848C6 /* CustomCell.xib */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58184A592438C89900E848C6 /* CustomCell.xib in Resources */,
 				580A289C23D1E34F0077DE17 /* Testable.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -790,7 +794,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.0;
+				MARKETING_VERSION = 2.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.artemkalmykov.ios.utils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -817,7 +821,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.0;
+				MARKETING_VERSION = 2.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.artemkalmykov.ios.utils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
